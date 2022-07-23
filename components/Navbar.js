@@ -17,6 +17,9 @@ export default function Navbar() {
           <Link href="/web/image">
             <a href="">image</a>
           </Link>
+          <Link href="/blog">
+            <a href="">Blog / Api</a>
+          </Link>
         </ul>
       </nav>
     </>
