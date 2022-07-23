@@ -14,6 +14,9 @@ export default function Navbar() {
           <Link href="/web/contact">
             <a href="">contact</a>
           </Link>
+          <Link href="/web/image">
+            <a href="">image</a>
+          </Link>
         </ul>
       </nav>
     </>
