@@ -5,6 +5,7 @@ export default function Home() {
     <div className={styles.container}>
       <main>
         <p>Hello World</p>
+        <a href="http://localhost:3000/web/home">Visit Another Route</a>
       </main>
     </div>
   )

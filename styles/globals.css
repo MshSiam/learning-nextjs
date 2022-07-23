@@ -22,5 +22,13 @@ a {
   body {
     color: white;
     background: black;
+    text-align: center;
   }
+}
+a {
+  margin-right: 10px;
+  background-color: rgb(163, 108, 4);
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
