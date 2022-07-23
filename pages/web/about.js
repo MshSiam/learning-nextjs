@@ -1,8 +1,12 @@
+import Head from "next/head"
 import Navbar from "../../components/Navbar"
 
 export default function about() {
   return (
     <div>
+      <Head>
+        <title>About</title>
+      </Head>
       <Navbar></Navbar>
       <h1>this is about</h1>
       <p>

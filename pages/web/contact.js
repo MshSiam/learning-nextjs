@@ -1,9 +1,13 @@
+import Head from "next/head"
 import Navbar from "../../components/Navbar"
 import styles from "../../styles/contact.module.css"
 
 export default function contact() {
   return (
     <div>
+      <Head>
+        <title>Contact</title>
+      </Head>
       <Navbar></Navbar>
       <h1 className={styles.contactHeading}>this is contact</h1>
       <p className="paragraph">

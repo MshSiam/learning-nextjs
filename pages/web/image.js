@@ -1,10 +1,14 @@
 import Navbar from "../../components/Navbar"
 import styles from "../../styles/image.module.css"
 import Image from "next/image"
+import Head from "next/head"
 
-export default function contact() {
+export default function image() {
   return (
     <div>
+      <Head>
+        <title>Image</title>
+      </Head>
       <Navbar></Navbar>
       <h1 className={styles.contactHeading}>this is image optimization page</h1>
       <div className={styles.Image}>
