@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Navbar from "../../components/Navbar"
 import styles from "../../styles/blog.module.css"
+import Link from "next/link"
 
 export const getStaticProps = async () => {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts`)
@@ -13,7 +14,7 @@ export const getStaticProps = async () => {
   }
 }
 
-export default function index({ data }) {
+export default function blog({ data }) {
   return (
     <div>
       <Head>
@@ -26,7 +27,10 @@ export default function index({ data }) {
           return (
             <div className={styles.blogContainer} key={user.id}>
               <h3>{user.id}</h3>
-              <p>{user.title}</p>
+              <p>{user.title.slice(0, 20)}</p>
+              <Link href={`/blog/${user.id}`}>
+                <h4 className={styles.btn}>Read More</h4>
+              </Link>
             </div>
           )
         })}
