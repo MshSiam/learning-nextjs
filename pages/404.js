@@ -1,11 +1,18 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { useEffect } from "react"
 
 export default function error() {
   const router = useRouter()
   const handleClick = () => {
     router.push("/web/home")
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/web/home")
+    }, 5000)
+  }, [])
 
   return (
     <>
@@ -29,6 +36,7 @@ export default function error() {
       <br />
       <br />
       <a onClick={handleClick}>Back to home with ONCLICK</a>
+      <h3>You will be redirected to home page within 5 sec</h3>
     </>
   )
 }
